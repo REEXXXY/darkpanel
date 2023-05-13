@@ -52,3 +52,41 @@ function listCaravans() {
 
 // Karavanları listeleyen fonksiyonu çağır
 listCaravans();
+function formatPhoneNumber(phoneNumberString) {
+  var cleaned = ('' + phoneNumberString).replace(/\D/g, '');
+  var match = cleaned.match(/^(\d{3})(\d{3})(\d{2})(\d{2})$/);
+  if (match) {
+    return '(' + match[1] + ') ' + match[2] + '-' + match[3] + '-' + match[4];
+  }
+  return null;
+}
+
+function validateForm() {
+  var nameInput = document.forms['booking-form']['name'];
+  var emailInput = document.forms['booking-form']['email'];
+  var phoneInput = document.forms['booking-form']['phone'];
+
+  var name = nameInput.value.trim();
+  var email = emailInput.value.trim();
+  var phone = phoneInput.value.trim();
+
+  if (name === '' || email === '' || phone === '') {
+    alert('Lütfen tüm alanları doldurun.');
+    return false;
+  }
+
+  if (phone.length !== 10) {
+    alert('Lütfen geçerli bir telefon numarası girin.');
+    return false;
+  }
+
+  var formattedPhone = formatPhoneNumber(phone);
+  if (formattedPhone === null) {
+    alert('Lütfen geçerli bir telefon numarası girin.');
+    return false;
+  } else {
+    phoneInput.value = formattedPhone;
+  }
+
+  return true;
+}
