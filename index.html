@@ -6,49 +6,37 @@
   <link rel="stylesheet" href="style.css">
   <script src="script.js"></script>
 </head>
-  <body>
-    <header>
-      <nav>
+<body>
+  <header class="header">
+    <h1>Karavan ve Araba Kiralama</h1>
+  </header>
+  <div class="container">
+    <div class="card" id="caravan1">
+      <img class="card-image" src="https://images.unsplash.com/photo-1585083715575-94c57968d4e2?ixid=MnwxMjA3fDB8MHxzZWFyY2h8NXx8a2FyYXZhbnxlbnwwfHwwfHw%3D&ixlib=rb-1.2.1&w=1000&q=80" alt="Karavan 1">
+      <div class="card-details">
+        <h2>Karavan 1</h2>
         <ul>
-          <li><a href="#">Ana Sayfa</a></li>
-          <li><a href="#">Karavanlar</a></li>
-          <li><a href="#">Rezervasyon</a></li>
-          <li><a href="#">Hakkımızda</a></li>
+          <li><strong>Fiyat:</strong> 500 TL/gün</li>
+          <li><strong>Kapasite:</strong> 4 kişi</li>
+          <li><strong>Uzunluk:</strong> 6 metre</li>
+          <li><strong>Ağırlık:</strong> 2.5 ton</li>
         </ul>
-      </nav>
-    </header>
-    <main>
-      <section class="hero">
-        <h1>Karavan Kiralama</h1>
-        <p>Tatilinizi farklı bir deneyimle yaşayın!</p>
-        <button>Karavanlarımızı Keşfedin</button>
-      </section>
-      <section class="features">
-        <h2>Neden Biz?</h2>
-        <div class="feature">
-          <i class="fas fa-check"></i>
-          <h3>Kaliteli Karavanlar</h3>
-          <p>Tam donanımlı ve konforlu karavanlarımız ile tatilinizi daha keyifli hale getirin.</p>
-        </div>
-        <div class="feature">
-          <i class="fas fa-check"></i>
-          <h3>Kolay Rezervasyon</h3>
-          <p>Online rezervasyon sistemimiz ile hızlı ve güvenli bir şekilde karavan kiralayabilirsiniz.</p>
-        </div>
-        <div class="feature">
-          <i class="fas fa-check"></i>
-          <h3>Müşteri Hizmetleri</h3>
-          <p>Profesyonel müşteri hizmetleri ekibimiz her zaman hizmetinizde.</p>
-        </div>
-      </section>
-      <section class="cta">
-        <h2>Hemen Rezervasyon Yapın</h2>
-        <p>Tatilinizi unutulmaz kılmak için hemen karavanlarımızdan birini kiralayın!</p>
-        <button>Rezervasyon Yap</button>
-      </section>
-    </main>
-    <footer>
-      <p>&copy; 2023 Karavan Kiralama</p>
-    </footer>
-  </body>
-</html>
+        <button class="booking-button" onclick="openBookingForm(1)">Rezervasyon Yap</button>
+      </div>
+    </div>
+    <div class="card" id="caravan2">
+      <img class="card-image" src="https://images.unsplash.com/photo-1596547166129-e0a6a4f16e70?ixid=MnwxMjA3fDB8MHxzZWFyY2h8MXx8a2FyYXZhbnxlbnwwfHwwfHw%3D&ixlib=rb-1.2.1&w=1000&q=80" alt="Karavan 2">
+      <div class="card-details">
+        <h2>Karavan 2</h2>
+        <ul>
+          <li><strong>Fiyat:</strong> 600 TL/gün</li>
+          <li><strong>Kapasite:</strong> 6 kişi</li>
+          <li><strong>Uzunluk:</strong> 7 metre</li>
+          <li><strong>Ağırlık:</strong> 3 ton</li>
+        </ul>
+        <button class="booking-button" onclick="openBookingForm(2)">Rezervasyon Yap</button>
+      </div>
+    </div>
+    <div class="card" id="caravan3">
+      <img class="card-image" src="https://images.unsplash.com/photo-1589984832386-cd6c7d1c5d2a?ixid=MnwxMjA3fDB8MHxzZWFyY2h8NXx8YXJhYmElMjBzaGFyZXRoaW5nfGVufDB8fDB8fA%3D%3D&ixlib=rb-1.2.1&w=1000&q=80
+
