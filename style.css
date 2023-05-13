@@ -1,0 +1,123 @@
+body {
+  background-color: #f3f3f3;
+  font-family: Arial, sans-serif;
+  color: #444;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.header {
+  background-color: #fff;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  padding: 20px;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.navbar ul {
+  display: flex;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.navbar li {
+  margin: 0 10px;
+}
+
+.navbar a {
+  text-decoration: none;
+  color: #444;
+  font-weight: bold;
+}
+
+.hero {
+  background-image: url(https://source.unsplash.com/1600x900/?caravan);
+  background-size: cover;
+  height: 500px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.hero h1 {
+  font-size: 48px;
+  color: #fff;
+  text-align: center;
+}
+
+.features {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 50px;
+}
+
+.feature {
+  flex-basis: calc(33.333% - 20px);
+  padding: 20px;
+  background-color: #fff;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  text-align: center;
+}
+
+.feature i {
+  font-size: 48px;
+  color: #444;
+  margin-bottom: 20px;
+}
+
+.feature h3 {
+  font-size: 24px;
+  margin-bottom: 10px;
+  color: #444;
+}
+
+.feature p {
+  font-size: 18px;
+  line-height: 1.5;
+  color: #777;
+}
+
+.cta {
+  background-color: #fff;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  margin-top: 50px;
+  padding: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.cta h2 {
+  font-size: 36px;
+  color: #444;
+  margin-bottom: 20px;
+}
+
+.cta p {
+  font-size: 24px;
+  line-height: 1.5;
+  color: #777;
+}
+
+.cta button {
+  font-size: 24px;
+  padding: 10px 20px;
+  border: none;
+  background-color: #ff6b6b;
+  color: #fff;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.cta button:hover {
+  background-color: #ff4f4f;
