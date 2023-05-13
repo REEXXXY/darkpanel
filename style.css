@@ -1,94 +1,98 @@
-/* Genel stil ayarları */
+/* Genel stiller */
 body {
-  font-family: 'Roboto', sans-serif;
-  margin: 0;
-  padding: 0;
-  background-color: #f5f5f5;
-  color: #333;
+  font-family: Arial, sans-serif;
+  background-color: #f2f2f2;
 }
 
 .container {
-  width: 80%;
-  margin: auto;
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 20px;
 }
 
-/* Başlık stilleri */
+/* Header stilleri */
 .header {
-  background-color: #0f4c81;
+  background-color: #333;
   color: #fff;
-  padding: 10px;
-  text-align: center;
+  padding: 20px;
 }
 
 .header h1 {
   margin: 0;
-  font-size: 2.5rem;
+  font-size: 2em;
 }
 
-/* Karavan resmi */
-.caravan-image {
-  display: block;
-  width: 100%;
-  margin-bottom: 20px;
+nav ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
 }
 
-/* Karavan özellikleri kutusu */
-.caravan-details {
+nav li {
+  margin: 0 10px;
+}
+
+nav a {
+  color: #fff;
+  text-decoration: none;
+}
+
+/* Ana içerik stilleri */
+.caravan-list {
+  padding: 50px 0;
+}
+
+.caravan-container {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.caravan {
+  width: 300px;
+  margin-bottom: 30px;
   background-color: #fff;
-  padding: 20px;
-  border: 1px solid #ddd;
-  margin-bottom: 20px;
+  box-shadow: 0px 2px 10px rgba(0,0,0,0.2);
 }
 
-.caravan-details h2 {
-  margin-top: 0;
-  font-size: 1.5rem;
+.caravan img {
+  width: 100%;
+}
+
+.caravan-details {
+  padding: 20px;
+}
+
+.caravan-details h3 {
+  margin: 0;
+  font-size: 1.2em;
 }
 
 .caravan-details ul {
-  list-style: none;
+  margin: 10px 0 20px 0;
   padding: 0;
-  margin: 0;
+  list-style: none;
 }
 
-.caravan-details li {
-  display: flex;
-  justify-content: space-between;
-  padding: 10px 0;
-  border-bottom: 1px solid #ddd;
-}
-
-/* Rezervasyon formu */
-.booking-form {
-  background-color: #fff;
-  padding: 20px;
-  border: 1px solid #ddd;
-  margin-bottom: 20px;
-}
-
-.booking-form h2 {
-  margin-top: 0;
-  font-size: 1.5rem;
-  margin-bottom: 20px;
-}
-
-.booking-form label {
-  display: block;
+.caravan-details ul li {
   margin-bottom: 10px;
 }
 
-.booking-form input[type="text"],
-.booking-form input[type="email"] {
-  width: 100%;
-  padding: 10px;
-  margin-bottom: 20px;
-  border: 1px solid #ddd;
-}
-
-.booking-form input[type="submit"] {
-  background-color: #0f4c81;
+.btn {
+  display: block;
+  margin: 20px auto 0 auto;
+  padding: 10px 20px;
+  background-color: #333;
   color: #fff;
   border: none;
-  padding: 10px 20px;
+  border-radius: 4px;
+  font-size: 1.2em;
   cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.btn:hover {
+  background-color: #555;
 }
