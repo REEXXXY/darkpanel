@@ -1,42 +1,69 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
   <meta charset="UTF-8">
-  <title>Karavan Kiralama Sitesi</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Karavan Kiralama</title>
   <link rel="stylesheet" href="style.css">
-  <script src="script.js"></script>
 </head>
 <body>
   <header class="header">
-    <h1>Karavan ve Araba Kiralama</h1>
+    <div class="container">
+      <h1>Karavan Kiralama</h1>
+      <nav>
+        <ul>
+          <li><a href="#">Ana Sayfa</a></li>
+          <li><a href="#">Karavanlarımız</a></li>
+          <li><a href="#">Rezervasyon</a></li>
+          <li><a href="#">İletişim</a></li>
+        </ul>
+      </nav>
+    </div>
   </header>
-  <div class="container">
-    <div class="card" id="caravan1">
-      <img class="card-image" src="https://images.unsplash.com/photo-1585083715575-94c57968d4e2?ixid=MnwxMjA3fDB8MHxzZWFyY2h8NXx8a2FyYXZhbnxlbnwwfHwwfHw%3D&ixlib=rb-1.2.1&w=1000&q=80" alt="Karavan 1">
-      <div class="card-details">
-        <h2>Karavan 1</h2>
-        <ul>
-          <li><strong>Fiyat:</strong> 500 TL/gün</li>
-          <li><strong>Kapasite:</strong> 4 kişi</li>
-          <li><strong>Uzunluk:</strong> 6 metre</li>
-          <li><strong>Ağırlık:</strong> 2.5 ton</li>
-        </ul>
-        <button class="booking-button" onclick="openBookingForm(1)">Rezervasyon Yap</button>
-      </div>
-    </div>
-    <div class="card" id="caravan2">
-      <img class="card-image" src="https://images.unsplash.com/photo-1596547166129-e0a6a4f16e70?ixid=MnwxMjA3fDB8MHxzZWFyY2h8MXx8a2FyYXZhbnxlbnwwfHwwfHw%3D&ixlib=rb-1.2.1&w=1000&q=80" alt="Karavan 2">
-      <div class="card-details">
-        <h2>Karavan 2</h2>
-        <ul>
-          <li><strong>Fiyat:</strong> 600 TL/gün</li>
-          <li><strong>Kapasite:</strong> 6 kişi</li>
-          <li><strong>Uzunluk:</strong> 7 metre</li>
-          <li><strong>Ağırlık:</strong> 3 ton</li>
-        </ul>
-        <button class="booking-button" onclick="openBookingForm(2)">Rezervasyon Yap</button>
-      </div>
-    </div>
-    <div class="card" id="caravan3">
-      <img class="card-image" src="https://images.unsplash.com/photo-1589984832386-cd6c7d1c5d2a?ixid=MnwxMjA3fDB8MHxzZWFyY2h8NXx8YXJhYmElMjBzaGFyZXRoaW5nfGVufDB8fDB8fA%3D%3D&ixlib=rb-1.2.1&w=1000&q=80
 
+  <main>
+    <section class="caravan-list">
+      <div class="container">
+        <h2>Karavanlarımız</h2>
+        <div class="caravan-container">
+          <div class="caravan">
+            <img src="images/caravan1.jpg" alt="Karavan">
+            <div class="caravan-details">
+              <h3>Özellikler</h3>
+              <ul>
+                <li>Yataklar: 4 kişilik</li>
+                <li>Mutfak: Tam donanımlı</li>
+                <li>Banyo: Duş ve tuvalet</li>
+                <li>Aksesuarlar: Klima, uydu TV, Wi-Fi</li>
+              </ul>
+              <button class="btn">Rezervasyon Yap</button>
+            </div>
+          </div>
+
+          <div class="caravan">
+            <img src="images/caravan2.jpg" alt="Karavan">
+            <div class="caravan-details">
+              <h3>Özellikler</h3>
+              <ul>
+                <li>Yataklar: 6 kişilik</li>
+                <li>Mutfak: Tam donanımlı</li>
+                <li>Banyo: Duş ve tuvalet</li>
+                <li>Aksesuarlar: Klima, uydu TV, Wi-Fi</li>
+              </ul>
+              <button class="btn">Rezervasyon Yap</button>
+            </div>
+          </div>
+
+          <div class="caravan">
+            <img src="images/caravan3.jpg" alt="Karavan">
+            <div class="caravan-details">
+              <h3>Özellikler</h3>
+              <ul>
+                <li>Yataklar: 2 kişilik</li>
+                <li>Mutfak: Tam donanımlı</li>
+                <li>Banyo: Duş ve tuvalet</li>
+                <li>Aksesuarlar: Klima, uydu TV, Wi-Fi</li>
+              </ul>
+              <button class="btn">Rezervasyon Yap</button>
+            </div>
+          </div>
